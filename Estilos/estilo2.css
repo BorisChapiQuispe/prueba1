@@ -1,0 +1,60 @@
+.contenedor {
+    background-color: aliceblue;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-areas: "header  header  header"
+                         "nav        nav    nav"
+                         "materias    card1   card2"
+                         "card3    card4   card5";
+}
+.contenedor .header{
+    grid-area: header;
+}
+.contenedor .nav{
+    grid-area: nav;
+}
+.contenedor .materias{
+    grid-area: materias;
+}
+.contenedor .card1{
+    grid-area: card1;
+}
+.contenedor .card2{
+    grid-area: card2;
+}
+.contenedor .card3{
+    grid-area: card3;
+}
+.contenedor .card4{
+    grid-area: card4;
+}
+.contenedor .card5{
+    grid-area: card5;
+}
+@media screen and (max-width: 600px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: 4fr 5fr;
+        grid-template-areas: "header header"
+                             "nav nav "
+                             "materias card1"
+                             "card2 card3"
+                             "card4 card5";
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .contenedor{
+        grid-template-columns: 5fr;
+        grid-template-areas: "header"
+                             "nav  "
+                             "materias  "
+                             "card1"
+                             "card2"
+                             "card3"
+                             "card4"
+                             "card5";
+    }
+    
+}
